@@ -3,8 +3,6 @@ Matlab code to reproduce computations in [Dodson et al. 2019]
 
 
 # Instructions for Use
-## Stephanie Dodson
-### Stephanie_Dodson@Alumni.Brown.edu
 
 This respository provides Matlab code to solve for spiral wave patterns, spectra, and additional related tasks from [S Dodson and B Sandstede: Determining the source of period-doubling instabilities in spiral waves](https://arxiv.org/abs/1905.12604). Details about the methods can be found in the paper, here we provide instructions on how to run the codes.
 
