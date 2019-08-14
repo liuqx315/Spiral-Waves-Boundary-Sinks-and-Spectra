@@ -4,7 +4,7 @@ Matlab code to reproduce computations in [Dodson et al. 2019]
 
 # Instructions for Use
 
-This respository provides Matlab code to solve for spiral wave patterns, spectra, and additional related tasks from [S Dodson and B Sandstede: Determining the source of period-doubling instabilities in spiral waves](https://arxiv.org/abs/1905.12604). Details about the methods can be found in the paper, here we provide instructions on how to run the codes.
+This repository provides Matlab code to solve for spiral wave patterns, spectra, and additional related tasks from [S Dodson and B Sandstede: Determining the source of period-doubling instabilities in spiral waves](https://arxiv.org/abs/1905.12604). Details about the methods can be found in the paper, here we provide instructions on how to run the codes.
 
 In general, the codes are organized into folders by task, and the contents of each folder are described in the relevant sections. The folder `Util` contains utility functions that one or more scripts may call. The scripts work for the Karma and R&ouml;ssler models by calling the model specific functions, which lie in the `Util` folder, and much of this code can be adapted for other reaction-diffusion systems by modifying these model specific functions.
 
