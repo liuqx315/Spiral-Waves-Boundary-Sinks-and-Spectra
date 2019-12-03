@@ -6,7 +6,7 @@ function [f,J] = jacobian_for_spectra_karma(u,L1,L2,par,numPar)
 tauE = 1/par.tauE;
 taun = 1/par.taun;
 
-R = 1 - exp(-par.Re);
+R = 1/(1 - exp(-par.Re));
 omega = par.omega;
 
 nx = numPar.nx;
@@ -21,7 +21,7 @@ V = u(nx*ny+1:2*nx*ny); V = V(nx:end);
 tanE = tanh(U - par.Eh);        % Only calculate once
 % Karma model
 fU = tauE .* ( -U + 0.5*(par.Estar - V.^par.M).*(1 - tanE) .* U.^2 );
-fV = taun .* ( ((1 - R.* V)./R) .* thSn - ( 1 - thSn ).* V );
+fV = taun .* ( R.* thSn - V);
 line1 = par.gamma*(L2*U) + omega*(L1*U) + fU;
 line2 = par.delta*(L2*V) + omega*(L1*V) + fV;
 
