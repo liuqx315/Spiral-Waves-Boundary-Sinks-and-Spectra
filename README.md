@@ -1,13 +1,11 @@
 # Spiral-Waves-Boundary-Sinks-and-Spectra
-Matlab code to reproduce computations in [Dodson et al. 2019]
-
+Matlab code to reproduce computations in [Dodson and Sandstede 2019].
 
 # Instructions for Use
 
-This repository provides Matlab code to solve for spiral wave patterns, spectra, and additional related tasks from [S Dodson and B Sandstede: Determining the source of period-doubling instabilities in spiral waves](https://arxiv.org/abs/1905.12604). Details about the methods can be found in the paper, here we provide instructions on how to run the codes.
+This repository provides Matlab code to solve for spiral wave patterns, spectra, and additional related tasks from [S Dodson and B Sandstede. Determining the source of period-doubling instabilities in spiral waves. SIAM Journal on Applied Dynamical Systems 18 (2019) 2202-2226](http://dx.doi.org/10.1137/19M1264813). Details about the methods can be found in the paper, here we provide instructions on how to run the codes.
 
 In general, the codes are organized into folders by task, and the contents of each folder are described in the relevant sections. The folder `Util` contains utility functions that one or more scripts may call. The scripts work for the Karma and R&ouml;ssler models by calling the model specific functions, which lie in the `Util` folder, and much of this code can be adapted for other reaction-diffusion systems by modifying these model specific functions.
-
 
 ## Data Files
 
@@ -39,7 +37,6 @@ Secant continuation that works for spiral waves on bounded disks with Neumann or
 
 **Point Eigenfunction:** `continue_non_reflecting_bc_eigenfunction`
 Simple continuation that starts with spiral and eigenfucntion with Neumann boundary conditions and continues to non-reflecting boundary conditions using the two-step procees of (1) solving for spiral wave and (2) computing new eigenfunction. The two-step process is necessary because the linearization in the eigenvalue problem requires a spiral solution with the same parameter values.
-
 
 ## Spectra
 
